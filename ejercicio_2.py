@@ -28,7 +28,7 @@ print(datos)
 print(registro)
 print(salida) 
 
-## Cambio a tuplas con correccion de cogido para que satisfaga
+## Cambio a tuplas con correccion de codigo para que satisfaga
 
 def registrar(valores, registro):
     copia = list(valores)

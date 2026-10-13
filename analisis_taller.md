@@ -94,3 +94,27 @@ Un número primo es un número natural mayor que 1 que solo tiene dos divisores 
 los divisores que se probaron con el nueve son 3 haste de descubrir que no es un primo, se dividio en 1,2 y 3. 
 
 2. Corrige la función para cumplir: «recibe un entero; devuelve False para todos los menores que 2 y decide primalidad para los demás». No necesitas optimizar la búsqueda ni comprobar el tipo de entrada. 
+
+función: 
+def es_par_positivo(n): 
+    if n < 1:
+        return false 
+    if n % 2 == 0: 
+        return true 
+    return false 
+
+3. Un compañero dice que el else significa «el último if fue falso». Refuta esa interpretación con uno de los casos anteriores. 
+
+Else no significa que el último if fue false, el else se ejecuta cuando todas las condiciones anteriores fueron falsas, por ejemplo en el codigo: 
+def es_primo(n):
+    for divisor in range(2, n):
+        if n % divisor == 0:
+            resultado = False
+            break
+    else:
+        resultado = True
+    return resultado  
+Vemos que si no se cumple que es falso el else ("si no") es verdaero. 
+
+## Ejercicio 4 
+###  Recursividad: contrato, caso base y progreso 
